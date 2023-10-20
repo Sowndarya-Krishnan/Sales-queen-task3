@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/4f5858a434.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+        <div class="container">
+           <nav class="menu">
+                <ul id="myMenu">
+                   
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" id="mySearch" placeholder="Search.." title="Type in a category">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#tabel">Data Table</a></li>
+                    <li><a href="#wrapper">To-Do list</a></li>  
+                    <label for="options">Settings</label>
+                    <select name="options" id="options">
+                      <option value="Data">Data</option>
+                      <option value="Network">Network</option>
+                      <option value="Account">Account</option>
+                      <option value="Log-Out">Log-Out</option>
+                    </select>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>      
+            </nav>          
+        </div>         
+    </div>
+<!--------------------------------------------------------------------------------------------------------->
+   <div id="cards">
+      <div class="container">
+        <h1><span><b>Sales Queen Dashboard</b></span></h1>
+        <div class="card-list">
+          <div class="card 1" >
+              <h5>Task 1</h5>
+              <h6 >Snake Game</h6>
+              <p > Use arrow keys or tap on screen to control the snake. Hold down forward to increase speed or backwards to decrease speed. Eat to gain score.</p>
+          </div>
+          <div class="card 2" >
+            <h5>Task 2</h5>
+            <h6>Portfolio Website</h6>
+            <p>The most practical and memorable ways to share your work with press, potential collaborators or employers. </p>
+          </div>
+          <div class="card 3" >
+              <h5>Task 3</h5>
+              <h6>JDBC Connectivity</h6>
+              <p>The JDBC API consists of a set of interfaces and classes written in the Java programming language.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!------------------------------------------------------------------------------------------------------------------>
+<div id="progress">
+  <div class="container">
+    <div class="row">
+      <div class="progress-col-1">
+        <div class="progress-col-1__fill"></div>
+        <span class="progress-col-1__text">25%</span>
+      </div>
+      <div class="progress-col-2">
+        <div class="progress-col-2__fill"></div>
+        <span class="progress-col-2__text">55%</span>
+      </div>
+      <div class="progress-col-3">
+        <div class="progress-col-3__fill"></div>
+        <span class="progress-col-3__text">75%</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------->
+<br>
+<br>
+<div id="tabel">
+<h1><span><b>Projects</b></h1>
+<table>
+  <tr bgcolor="#fe6afe" >
+    <th><b><i>Company</i></b></th>
+    <th><b><i>Project</i></b></th>
+    <th><b><i>Status</i></b></th>
+  </tr>
+  <tr>
+    <td>Accenture</td>
+    <td>Project Velocity</td>
+    <td>Yet to complete</td>
+  </tr>
+  <tr>
+    <td>Virtusa</td>
+    <td>Runtime Terror</td>
+    <td>On going</td>
+  </tr>
+  <tr>
+    <td>Cognizant</td>
+    <td>AI tool</td>
+    <td>Analizing</td>
+  </tr>
+  <tr>
+    <td>ZOHO</td>
+    <td>Smart Guidance</td>
+    <td>Completed</td>
+  </tr>
+  <tr>
+    <td>Wipro</td>
+    <td>Personal Portfolio</td>
+    <td>Yet to complete</td>
+  </tr>
+  <tr>
+    <td>Cloud IQ</td>
+    <td>Cloud Computing</td>
+    <td>completed</td>
+  </tr>
+  <tr>
+    <td>Mitra Soft</td>
+    <td>JDBC connectivity</td>
+    <td>Initiating the process</td>
+  </tr>
+  <tr>
+    <td>Prophpenix</td>
+    <td>Dot Net</td>
+    <td>completed</td>
+  </tr>
+  <tr>
+    <td>Byjus</td>
+    <td>Snake Game</td>
+    <td>Pending</td>
+  </tr>
+  <tr>
+    <td>NTT Data</td>
+    <td>Hospital Website</td>
+    <td>Ongoing</td>
+  </tr>
+  <tr>
+    <td>Free Space</td>
+    <td>Network</td>
+    <td>completed</td>
+  </tr>
+  <tr>
+    <td>Ford</td>
+    <td>EV design</td>
+    <td>Processing</td>
+  </tr>
+</table>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!----------------------------------------------------------------------------------------------------------->
+<h1><b>Things To Do</b></h1>
+<div id="wrapper">
+  <h2>Todo List</h2>
+  <input type="text" id="input">
+  <button id="add">Add</button>
+  <div id="todoList">
+
+  </div>
+</div>
+<script src="app.js"></script>
+<!------------------------------------------------------------------------------------------------------------>
+<div id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fas fa fa-paper-plane"></i><span>sowndarya09032002@gmail.com</span></p>
+              <p><i class="fa-solid fa-phone-volume"></i><span>9361449813</span></p>
+             <div class="social-icons">
+               <a href="https://instagram.com/_sowndhu_2002_?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/sowndarya-krishnan-ab23731b1"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="https://github.com/Sowndarya-Krishnan"><i class="fa-brands fa-square-github"></i></a>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<!------------------------------------------------------------------------------------------------------------>
+<script>
+let button = document.getElementById('add')
+let todoList = document.getElementById('todoList')
+let input = document.getElementById('input');
+//local storage,cookies
+let todos = [];
+window.onload = ()=>{
+    todos = JSON.parse(localStorage.getItem('todos')) || []
+    todos.forEach(todo=>addtodo(todo))
+}
+
+button.addEventListener('click',()=>{
+    todos.push(input.value)
+    localStorage.setItem('todos',JSON.stringify(todos))
+    addtodo(input.value)
+    input.value=''
+})
+
+function addtodo(todo){
+    let para = document.createElement('p');
+    para.innerText = todo;
+    todoList.appendChild(para)
+    
+    para.addEventListener('click',()=>{
+        para.style.textDecoration = 'line-through'
+        remove(todo)
+    })
+    para.addEventListener('dblclick',()=>{
+        todoList.removeChild(para)
+        remove(todo)
+    })
+}
+
+function remove(todo){
+    let index = todos.indexOf(todo)
+    if (index > -1) {
+        todos.splice(index, 1);
+      }
+    localStorage.setItem('todos',JSON.stringify(todos))
+}
+</script>
+<script>
+        var myMenu = document.getElementById("myMenu");
+
+        function openmenu(){
+            myMenu.style.left = "0";
+        }
+        function closemenu(){
+            myMenu.style.left = "-200px";
+        }
+   </script>
+</body>
+</html>

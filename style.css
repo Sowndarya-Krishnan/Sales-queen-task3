@@ -1,0 +1,324 @@
+body {
+    background: #2b2929;
+    color: #fff;
+}
+input{
+    margin: 5px;
+}
+label{
+    width: 170px;
+    height: 3px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 15px;
+    color: white;
+
+}
+label:hover {
+    background-color:#fe6afe ;
+  }
+#mySearch {
+    width: 170px;
+    height: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  #myMenu li a:hover {
+    background-color:#fe6afe ;
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: grey;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fa-solid{
+    position:absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+/*------------------------------------------------------------------------------*/
+h5{
+    margin-top: 3px;
+    font-size: 30px;
+}
+h6{
+    margin-top: -10px;
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+}
+#cards{
+    padding: 30px 20px;
+}
+h1{
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+    text-decoration: dotted;
+}
+h1 span{
+    color: #fe6afe;
+}
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 10px;
+}
+.card-list div{
+    background: grey;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+#progress{
+   border-radius: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.progress-col-1{
+    width: 29%;
+    height: 20px;
+    margin-left: 25px;
+    margin-top: -65px;
+    border-radius: 5px;
+    background: rgb(61, 62, 61);
+}
+.progress-col-1__fill{
+    width: 25%;
+    height: 100%;
+    background: #fe6afe;
+}
+.progress-col-1__text{
+    position: absolute;
+    top: 85.5%;
+    left: 37px;
+    transform: translateY(-50%);
+    color: white;
+}
+.progress-col-2{
+    width: 29%;
+    height: 20px;
+    margin-top: -65px;
+    margin-right: 422px;
+    background: rgb(62, 61, 62);
+    border-radius: 5px;
+}
+.progress-col-2__fill{
+    width: 55%;
+    height: 100%;
+    background: #fe6afe;
+}
+.progress-col-2__text{
+    position: absolute;
+    top: 85.5%;
+    left: 36%;
+    transform: translateY(-50%);
+    color: white;
+}
+.progress-col-3{
+    width: 29%;
+    height: 20px;
+    margin-top: -65px;
+    margin-left: 820px;
+    background: rgb(60, 61, 60);
+    border-radius: 5px;
+}
+.progress-col-3__fill{
+    width: 75%;
+    height: 100%;
+    background: #fe6afe;
+}
+.progress-col-3__text{
+    position: absolute;
+    top: 85.5%;
+    left: 840px;
+    transform: translateY(-50%);
+    color: white;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+table {
+    margin-left: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 95%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  h1 span{
+    color: #fe6afe;
+  }
+  td, th {
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  /*tr:nth-child(even) {
+    background-color: rgb(214, 202, 202);
+  }
+/*--------------------------------------------------------------------------------------------------------*/
+#wrapper{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:#fe6afe;
+ }
+ h1{
+    text-align: center;
+    color: #fe6afe;
+ }
+ #wrapper h2{
+     display:flex;
+     justify-content: center;
+     
+ }
+ h2{
+     color:#fe6afe;
+     letter-spacing: 1px;
+ }
+ input{
+     border-radius: 5px;
+     border: 2px solid black ;
+     margin-top:30px;
+     height:2.5em;
+     width:250px;
+     padding-left:10px;
+ }
+ input:active{
+     border:none;
+ }
+ #wrapper{
+     height:500px;
+     width:400px;
+     margin:50px auto;
+     background-color:#1f2029;
+     border-radius:10px;
+     padding:30px;
+ }
+ 
+ button{
+     margin-top:20px;
+     background-color:#fe6afe;
+     border-radius: 4px;
+     height: 44px;
+     font-weight: 600;
+     padding: 0 30px;
+     letter-spacing: 1px;
+     border: none;
+     color: #102770;
+ }
+ 
+ button:hover{
+     cursor:pointer;
+ }
+ #todoList{
+     color:white;
+     font-size:28px;  
+     margin-top:10px; 
+ }
+ 
+ #todoList p{
+   margin:10px 0px;
+ }
+ 
+ #todoList p:hover{
+   cursor: pointer;
+ }
+ /*------------------------------------------------------------------------------------------*/
+ .contact-left{
+    flex-basis: 35%;
+}
+.contact-left h1{
+    margin-left: -200px;
+}
+.contact-left p{
+    margin-top:30px;
+}
+.contact-left p i{
+    color: #fe6afe;
+    margin-left: 25px;
+    font-size: 25px;
+}
+.contact-left span{
+    margin-left: 15px ;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 20px;
+    color:#abababe2 ;
+    display: inline-block;
+    transition: trasform(0.5s);
+}
+.social-icons a:hover{
+    color: #fe6afe;
+    transform: translateY(-5px);
+}
+/*#progress{
+    width: 36%;
+    height: 15px;
+    background: red;
+}
+.progress{
+    width: 50%;
+    height: 20px;
+    background: rgb(185, 173, 173);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress__fill{
+    width: 25%;
+    height: 100%;
+    background: red;
+}
+.progress__text{
+    position: absolute;
+    top: 37%;
+    left: 30px;
+    transform: translateY(-50%);
+    color: black;
+}
